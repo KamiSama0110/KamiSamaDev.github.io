@@ -1,6 +1,4 @@
-/* =============================================
-   TOKENS — dark theme (default)
-   ============================================= */
+
 :root {
   --bg:             #07090f;
   --surface:        rgba(14, 20, 32, 0.80);
@@ -59,7 +57,7 @@ code {
   background: rgba(0, 0, 0, 0.06);
 }
 
-/* Smooth color transitions */
+
 body, .site-header, section, .stats article,
 .project-card, .skills li, .theme-toggle,
 .btn-secondary, .site-nav a, .brand,
@@ -72,13 +70,10 @@ body, .site-header, section, .stats article,
     box-shadow 0.35s ease;
 }
 
-/* View Transition API: handled by JS circle animation */
 ::view-transition-old(root),
 ::view-transition-new(root) { animation: none; }
 
-/* =============================================
-   BACKGROUND EFFECTS
-   ============================================= */
+
 .grid-overlay {
   position: fixed;
   inset: 0;
@@ -119,9 +114,7 @@ body, .site-header, section, .stats article,
   50%       { transform: translateY(22px) scale(1.06); }
 }
 
-/* =============================================
-   LAYOUT SCAFFOLD
-   ============================================= */
+
 .site-header,
 main,
 .site-footer {
@@ -129,9 +122,7 @@ main,
   margin: 0 auto;
 }
 
-/* =============================================
-   HEADER
-   ============================================= */
+
 .site-header {
   display: flex;
   align-items: center;
@@ -183,9 +174,7 @@ main,
 .theme-toggle:hover,
 .theme-toggle:focus-visible { border-color: var(--accent-2); }
 
-/* =============================================
-   MAIN GRID
-   ============================================= */
+
 main {
   padding: 3rem 0 1.6rem;
   display: grid;
@@ -200,9 +189,7 @@ section {
   padding: clamp(1.5rem, 2.5vw, 2.2rem);
 }
 
-/* =============================================
-   TYPOGRAPHY HELPERS
-   ============================================= */
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -222,9 +209,7 @@ section {
   margin: 0;
 }
 
-/* =============================================
-   HERO
-   ============================================= */
+
 .hero h1 {
   font-family: "Instrument Serif", Georgia, serif;
   font-size: clamp(2.2rem, 6.5vw, 4.8rem);
@@ -253,9 +238,7 @@ section {
   margin-top: 1.6rem;
 }
 
-/* =============================================
-   BUTTONS
-   ============================================= */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -296,9 +279,7 @@ section {
   box-shadow: 0 10px 24px rgba(5, 10, 22, 0.20);
 }
 
-/* =============================================
-   STATS
-   ============================================= */
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -340,9 +321,7 @@ section {
   font-size: 0.88rem;
 }
 
-/* =============================================
-   PROJECT GRID
-   ============================================= */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -350,9 +329,8 @@ section {
   align-items: stretch;
 }
 
-/* =============================================
-   PROJECT CARD
-   ============================================= */
+
+
 .project-card {
   background: var(--surface-strong);
   border-radius: 16px;
@@ -375,7 +353,6 @@ section {
   box-shadow: 0 16px 36px rgba(28, 44, 80, 0.16);
 }
 
-/* WIP card variant */
 .project-card--wip {
   border-color: rgba(45, 198, 214, 0.25);
   background: var(--accent-wip);
@@ -452,7 +429,7 @@ section {
   background: rgba(14, 20, 36, 0.04);
 }
 
-/* Uniform "Ver repo" button */
+
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -508,9 +485,7 @@ section {
   50%       { opacity: 0.45; transform: scale(0.75); }
 }
 
-/* =============================================
-   ABOUT
-   ============================================= */
+
 .about > p {
   color: var(--muted);
   max-width: 70ch;
@@ -536,9 +511,7 @@ section {
   color: var(--text);
 }
 
-/* =============================================
-   CONTACT
-   ============================================= */
+
 .contact {
   display: flex;
   align-items: center;
@@ -568,18 +541,14 @@ section {
   flex-shrink: 0;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
+
 .site-footer {
   padding: 0.8rem 0 2rem;
   color: var(--muted);
   font-size: 0.88rem;
 }
 
-/* =============================================
-   SCROLL REVEAL
-   ============================================= */
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -590,9 +559,7 @@ section {
 
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-/* =============================================
-   RESPONSIVE
-   ============================================= */
+
 @media (max-width: 960px) {
   .site-header { flex-wrap: wrap; gap: 0.6rem; }
   .stats        { grid-template-columns: 1fr; }
@@ -606,9 +573,7 @@ section {
   .skills       { gap: 0.45rem; }
 }
 
-/* =============================================
-   REDUCED MOTION
-   ============================================= */
+
 @media (prefers-reduced-motion: reduce) {
   .bg-orb,
   .reveal,
