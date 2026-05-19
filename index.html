@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" class="no-js">
+<html lang="es" data-theme="dark" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kami.Dev | Portfolio</title>
-    <meta
-      name="description"
-      content="Design-focused developer portfolio with selected projects and contact information."
-    />
+    <meta name="description" content="Portfolio de desarrollador backend y web. APIs, aplicaciones de escritorio y sistemas con Java, TypeScript y Python." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,27 +17,24 @@
 
     <header class="site-header">
       <a class="brand" href="#top">Kami.Dev</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
       </nav>
-      <button
-        class="theme-toggle"
-        type="button"
-        aria-label="Switch color theme"
-        aria-pressed="true"
-      >
-        <span class="theme-toggle-label">Light mode</span>
+      <button class="theme-toggle" type="button" aria-label="Cambiar a modo claro" aria-pressed="true">
+        <span class="theme-toggle-label">Modo claro</span>
       </button>
     </header>
 
     <main id="top">
+
       <section class="hero reveal">
-        <p class="eyebrow">Backend + Web</p>
-        <h1>Construyo bases solidas para productos digitales confiables.</h1>
+        <p class="eyebrow">Backend · Web · Desktop</p>
+        <h1>Construyo bases sólidas para<br /><em>productos digitales</em> confiables.</h1>
         <p class="hero-text">
-          Me enfoco en backend y aplicaciones web, con atencion a rendimiento, claridad y buenas practicas.
+          Me enfoco en backend y aplicaciones web, con atención al rendimiento,
+          la claridad del código y las buenas prácticas.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">Ver proyectos</a>
@@ -51,157 +42,139 @@
         </div>
       </section>
 
-      <section class="stats reveal">
+      <section class="stats reveal" aria-label="Resumen">
         <article>
-          <h2>Backend</h2>
-          <p>APIs, servicios y arquitectura</p>
+          <span class="stat-number">5+</span>
+          <h2>Proyectos</h2>
+          <p>Construidos y publicados</p>
         </article>
         <article>
-          <h2>Web</h2>
-          <p>Apps claras y rapidas</p>
+          <span class="stat-number">3</span>
+          <h2>Ecosistemas</h2>
+          <p>Java · TypeScript · Python</p>
         </article>
         <article>
-          <h2>Desktop</h2>
-          <p>Experiencias consistentes</p>
+          <span class="stat-number">Full</span>
+          <h2>Stack</h2>
+          <p>Backend, web y escritorio</p>
         </article>
       </section>
 
       <section id="projects" class="projects reveal">
         <div class="section-head">
           <p class="eyebrow">Proyectos</p>
-          <h2>Trabajo reciente en backend y web</h2>
+          <h2>Trabajo reciente</h2>
         </div>
         <div class="project-grid">
+
           <article class="project-card reveal">
-            <p class="project-tag">Desktop App</p>
-            <h3>Organizador de Carpetas</h3>
-            <p>
-              App de escritorio para organizar archivos por extension, categoria, tamano o fecha, con
-              vista previa, duplicados e historial de operaciones.
-            </p>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>PySide6</span>
+            <div class="project-card-body">
+              <p class="project-tag">Desktop App</p>
+              <h3>Organizador de Carpetas</h3>
+              <p>App de escritorio para organizar archivos por extensión, categoría, tamaño o fecha. Incluye vista previa, detección de duplicados e historial de operaciones.</p>
             </div>
-            <a
-              class="project-link"
-              href="https://github.com/KamiSama0110/organizador-carpetas"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir repositorio Organizador de Carpetas"
-              >Ver repo</a
-            >
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>Python</span><span>PySide6</span>
+              </div>
+              <a class="project-link" href="https://github.com/KamiSama0110/organizador-carpetas" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio: Organizador de Carpetas">Ver repo ↗</a>
+            </footer>
           </article>
+
           <article class="project-card reveal">
-            <p class="project-tag">Java Console</p>
-            <h3>Torres de Hanoi</h3>
-            <p>
-              Juego clasico en consola con validacion de movimientos y logica de torres.
-            </p>
-            <div class="project-stack">
-              <span>Java</span>
+            <div class="project-card-body">
+              <p class="project-tag">Java Console</p>
+              <h3>Torres de Hanói</h3>
+              <p>Juego clásico en consola con validación de movimientos, lógica completa de torres y manejo de estados.</p>
             </div>
-            <a
-              class="project-link"
-              href="https://github.com/KamiSama0110/Torres-de-Hanoi"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir repositorio Torres de Hanoi"
-              >Ver repo</a
-            >
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>Java</span>
+              </div>
+              <a class="project-link" href="https://github.com/KamiSama0110/Torres-de-Hanoi" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio: Torres de Hanói">Ver repo ↗</a>
+            </footer>
           </article>
+
           <article class="project-card reveal">
-            <p class="project-tag">Desktop App</p>
-            <h3>EPUB Builder</h3>
-            <p>
-              Editor visual de libros EPUB con WYSIWYG, exportacion y autosave.
-            </p>
-            <div class="project-stack">
-              <span>Java 17</span>
-              <span>JavaFX</span>
-              <span>Maven</span>
+            <div class="project-card-body">
+              <p class="project-tag">Desktop App</p>
+              <h3>EPUB Builder</h3>
+              <p>Editor visual de libros EPUB con interfaz WYSIWYG, exportación automática y guardado de progreso.</p>
             </div>
-            <a
-              class="project-link"
-              href="https://github.com/KamiSama0110/epubBuilder"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir repositorio EPUB Builder"
-              >Ver repo</a
-            >
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>Java 17</span><span>JavaFX</span><span>Maven</span>
+              </div>
+              <a class="project-link" href="https://github.com/KamiSama0110/epubBuilder" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio: EPUB Builder">Ver repo ↗</a>
+            </footer>
           </article>
+
           <article class="project-card reveal">
-            <p class="project-tag">Desktop Tools</p>
-            <h3>Desktop Entry Creator</h3>
-            <p>
-              Generador de archivos .desktop con preview en vivo, guardado local o sistema y
-              actualizacion de base de escritorio.
-            </p>
-            <div class="project-stack">
-              <span>Java</span>
-              <span>Swing</span>
-              <span>jpackage</span>
+            <div class="project-card-body">
+              <p class="project-tag">Desktop Tools</p>
+              <h3>Desktop Entry Creator</h3>
+              <p>Generador de archivos <code>.desktop</code> con vista previa en vivo, guardado local o en el sistema y actualización de la base de escritorio.</p>
             </div>
-            <a
-              class="project-link"
-              href="https://github.com/KamiSama0110/desktop-generator"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir repositorio Desktop Entry Creator"
-              >Ver repo</a
-            >
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>Java</span><span>Swing</span><span>jpackage</span>
+              </div>
+              <a class="project-link" href="https://github.com/KamiSama0110/desktop-generator" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio: Desktop Entry Creator">Ver repo ↗</a>
+            </footer>
           </article>
+
           <article class="project-card reveal">
-            <p class="project-tag">API</p>
-            <h3>Tasks API</h3>
-            <p>
-              API REST con autenticacion JWT, CRUD de tareas por usuario y validaciones.
-            </p>
-            <div class="project-stack">
-              <span>NestJS</span>
-              <span>TypeORM</span>
-              <span>SQLite</span>
+            <div class="project-card-body">
+              <p class="project-tag">API REST</p>
+              <h3>Tasks API</h3>
+              <p>API REST con autenticación JWT, CRUD completo de tareas por usuario y validaciones a nivel de dominio.</p>
             </div>
-            <a
-              class="project-link"
-              href="https://github.com/KamiSama0110/Tasks-API"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Abrir repositorio Tasks API"
-              >Ver repo</a
-            >
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>NestJS</span><span>TypeORM</span><span>SQLite</span>
+              </div>
+              <a class="project-link" href="https://github.com/KamiSama0110/Tasks-API" target="_blank" rel="noopener noreferrer" aria-label="Ver repositorio: Tasks API">Ver repo ↗</a>
+            </footer>
           </article>
-          <article class="project-card reveal">
-            <p class="project-tag project-tag-progress">En progreso</p>
-            <h3>Gestion de Postas</h3>
-            <p>
-              Sistema web para administrar postas, turnos y registros con foco en rendimiento y claridad.
-            </p>
-            <div class="project-stack">
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>Postgres</span>
+
+          <article class="project-card project-card--wip reveal">
+            <div class="project-card-body">
+              <p class="project-tag">Web App</p>
+              <h3>Gestión de Postas</h3>
+              <p>Sistema web para administrar postas, turnos y registros médicos, con foco en rendimiento y claridad operativa.</p>
             </div>
+            <footer class="project-card-footer">
+              <div class="project-stack">
+                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+              </div>
+              <span class="project-wip-badge">En desarrollo</span>
+            </footer>
           </article>
+
         </div>
       </section>
 
       <section id="about" class="about reveal">
         <div class="section-head">
-          <p class="eyebrow">Sobre mi</p>
-          <h2>Practico, directo y orientado a resultados.</h2>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Práctico, directo y orientado a resultados.</h2>
         </div>
         <p>
-          Me enfoco en backend con Java, TypeScript y Python, aplicando buenas practicas y soluciones claras.
-          Busco crear productos web y de escritorio que sean estables, faciles de mantener y con buen rendimiento.
+          Soy estudiante de Ingeniería Informática con enfoque en backend, APIs y aplicaciones
+          de escritorio. Trabajo principalmente con Java, TypeScript y Python, aplicando buenas
+          prácticas y soluciones claras a problemas reales. Me interesa construir software que sea
+          estable, fácil de mantener y con buen rendimiento — sin complejidad innecesaria.
         </p>
-        <ul class="skills" aria-label="Core skills">
+        <ul class="skills" aria-label="Habilidades principales">
           <li>Java + Hibernate</li>
           <li>JSP / EJB</li>
           <li>Tomcat / WildFly</li>
-          <li>TypeScript / Nest</li>
+          <li>TypeScript / NestJS</li>
           <li>Python / FastAPI</li>
-          <li>Postgres</li>
+          <li>PostgreSQL</li>
+          <li>JavaFX / Swing</li>
+          <li>Docker / Linux</li>
+          <li>Git</li>
         </ul>
       </section>
 
@@ -209,23 +182,18 @@
         <div>
           <p class="eyebrow">Contacto</p>
           <h2>Hablemos de tu proyecto.</h2>
+          <p class="contact-sub">Disponible para colaboraciones, proyectos freelance o prácticas.</p>
         </div>
         <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:kamisama011004@outlook.com">Contactar</a>
-          <a
-            class="btn btn-secondary"
-            href="https://wa.me/5359227683"
-            aria-label="Escribeme por WhatsApp"
-            target="_blank"
-            rel="noopener noreferrer"
-            >WhatsApp directo</a
-          >
+          <a class="btn btn-primary" href="mailto:kamisama011004@outlook.com">Escribir un correo</a>
+          <a class="btn btn-secondary" href="https://wa.me/5359227683" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer reveal">
-      <p>Copyright <span id="year"></span> Kami.Dev. All rights reserved.</p>
+      <p>© <span id="year"></span> Kami.Dev — Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
